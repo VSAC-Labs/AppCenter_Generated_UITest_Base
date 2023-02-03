@@ -2,7 +2,7 @@ echo "UITest Script Start"
 echo "Current Directory"
 pwd
 echo "CLONE"
-git clone https://github.com/vsac-labs/base_uitestproject.git
+#git clone https://github.com/vsac-labs/base_uitestproject.git
 
 cd base_uitestproject
 pwd
