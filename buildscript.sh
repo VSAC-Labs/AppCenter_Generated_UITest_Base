@@ -7,8 +7,14 @@ git clone https://github.com/vsac-labs/base_uitestproject.git
 cd base_uitestproject
 pwd
 
-echo "RESTORE"
+echo "Branches"
+git branches -l
 
+echo "SWITCH TO UITEST Version in build config"
+echo $UITestVersion
+git checkout -b $UITestVersion
+
+echo "RESTORE"
 dotnet restore AppCenter.UITest.Android.sln
 
 echo "BUILD"
